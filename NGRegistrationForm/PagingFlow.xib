@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="NGRegistrationForm" customModuleProvider="target">
+            <connections>
+                <outlet property="btnFirstNext" destination="Ses-sN-n2V" id="OdU-PY-K7T"/>
+                <outlet property="btnFountFinish" destination="VtG-BD-eRC" id="Qih-nw-vc6"/>
+                <outlet property="btnNextThird" destination="qVl-lp-ouL" id="zA4-uD-Fnu"/>
+                <outlet property="btnSecondNext" destination="YCB-XJ-s3d" id="4H5-KJ-ACM"/>
+                <outlet property="step1" destination="dsv-oo-k6v" id="fv2-Xe-5N9"/>
+                <outlet property="step2" destination="JVM-qO-Au9" id="ECI-0X-tL4"/>
+                <outlet property="step3" destination="Y0Y-dg-dK1" id="6O4-83-Ui7"/>
+                <outlet property="step4" destination="b8r-F1-pYs" id="aKA-QA-i6y"/>
+                <outlet property="txtFirstField" destination="nNa-7N-6Am" id="9tK-5s-NSd"/>
+                <outlet property="txtFourthField" destination="Rd1-Wi-YeL" id="jRj-rw-u2P"/>
+                <outlet property="txtSecondField" destination="GpT-Jw-JpX" id="k3D-Qr-09I"/>
+                <outlet property="txtThirdField" destination="Gau-JE-dCl" id="SZ3-QY-9hy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="dsv-oo-k6v" userLabel="Step1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter First Form Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nNa-7N-6Am">
+                    <rect key="frame" x="21" y="149" width="279" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="ue0-9I-WQl"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ses-sN-n2V">
+                    <rect key="frame" x="96" y="225" width="129" height="30"/>
+                    <state key="normal" title="Next">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btn_next_first:" destination="-1" eventType="touchUpInside" id="qQW-zi-L2P"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.41176470590000003" green="0.36862745099999999" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ses-sN-n2V" secondAttribute="trailing" constant="95" id="CeP-dJ-Rtg"/>
+                <constraint firstItem="nNa-7N-6Am" firstAttribute="leading" secondItem="dsv-oo-k6v" secondAttribute="leading" constant="21" id="JOJ-bH-cYx"/>
+                <constraint firstItem="Ses-sN-n2V" firstAttribute="top" secondItem="nNa-7N-6Am" secondAttribute="bottom" constant="46" id="MOL-bX-e0q"/>
+                <constraint firstItem="Ses-sN-n2V" firstAttribute="leading" secondItem="dsv-oo-k6v" secondAttribute="leading" constant="96" id="O8D-fN-DHn"/>
+                <constraint firstAttribute="trailing" secondItem="nNa-7N-6Am" secondAttribute="trailing" constant="20" id="l7a-Ix-8jo"/>
+                <constraint firstItem="nNa-7N-6Am" firstAttribute="top" secondItem="dsv-oo-k6v" secondAttribute="top" constant="149" id="qtX-ap-SoU"/>
+            </constraints>
+            <point key="canvasLocation" x="268" y="391"/>
+        </view>
+        <view contentMode="scaleToFill" id="JVM-qO-Au9" userLabel="Step2">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Second Form Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GpT-Jw-JpX">
+                    <rect key="frame" x="21" y="147" width="279" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="FcX-Mh-IO5"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCB-XJ-s3d">
+                    <rect key="frame" x="96" y="223" width="129" height="30"/>
+                    <state key="normal" title="Next">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="action_next_second:" destination="-1" eventType="touchUpInside" id="g5j-kS-ZbM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.7843137255" green="0.050980392159999999" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="YCB-XJ-s3d" firstAttribute="top" secondItem="GpT-Jw-JpX" secondAttribute="bottom" constant="46" id="QKQ-v7-aT3"/>
+                <constraint firstItem="GpT-Jw-JpX" firstAttribute="leading" secondItem="JVM-qO-Au9" secondAttribute="leading" constant="21" id="WQJ-qR-zNd"/>
+                <constraint firstItem="YCB-XJ-s3d" firstAttribute="leading" secondItem="JVM-qO-Au9" secondAttribute="leading" constant="96" id="Wwb-hn-nJQ"/>
+                <constraint firstAttribute="trailing" secondItem="GpT-Jw-JpX" secondAttribute="trailing" constant="20" id="hNx-ur-CtD"/>
+                <constraint firstAttribute="trailing" secondItem="YCB-XJ-s3d" secondAttribute="trailing" constant="95" id="pKe-OB-CYo"/>
+                <constraint firstItem="GpT-Jw-JpX" firstAttribute="top" secondItem="JVM-qO-Au9" secondAttribute="top" constant="147" id="xov-CO-xAD"/>
+            </constraints>
+            <point key="canvasLocation" x="677" y="391"/>
+        </view>
+        <view contentMode="scaleToFill" id="Y0Y-dg-dK1" userLabel="Step3">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Third Form Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gau-JE-dCl">
+                    <rect key="frame" x="21" y="149" width="279" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="9sX-4q-QFw"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVl-lp-ouL">
+                    <rect key="frame" x="96" y="225" width="129" height="30"/>
+                    <state key="normal" title="Next">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Action_Next_third:" destination="-1" eventType="touchUpInside" id="ILN-XJ-aLv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94509803920000002" green="0.58431372550000005" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qVl-lp-ouL" secondAttribute="trailing" constant="95" id="4RF-7e-JSD"/>
+                <constraint firstItem="qVl-lp-ouL" firstAttribute="leading" secondItem="Y0Y-dg-dK1" secondAttribute="leading" constant="96" id="4wF-El-Qor"/>
+                <constraint firstItem="Gau-JE-dCl" firstAttribute="leading" secondItem="Y0Y-dg-dK1" secondAttribute="leading" constant="21" id="7oU-uU-i6B"/>
+                <constraint firstItem="Gau-JE-dCl" firstAttribute="top" secondItem="Y0Y-dg-dK1" secondAttribute="top" constant="149" id="Et8-NP-f7z"/>
+                <constraint firstItem="qVl-lp-ouL" firstAttribute="top" secondItem="Gau-JE-dCl" secondAttribute="bottom" constant="46" id="UXI-GN-j1L"/>
+                <constraint firstAttribute="trailing" secondItem="Gau-JE-dCl" secondAttribute="trailing" constant="20" id="nao-Z0-iJM"/>
+            </constraints>
+            <point key="canvasLocation" x="1077" y="391"/>
+        </view>
+        <view contentMode="scaleToFill" id="b8r-F1-pYs" userLabel="Step4">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Four Form Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rd1-Wi-YeL">
+                    <rect key="frame" x="21" y="152" width="279" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="iaL-ab-298"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VtG-BD-eRC">
+                    <rect key="frame" x="96" y="228" width="129" height="30"/>
+                    <state key="normal" title="Finish">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="ActionFinish:" destination="-1" eventType="touchUpInside" id="C3u-vO-Azk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.16078431369999999" green="0.71372549019999998" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VtG-BD-eRC" secondAttribute="trailing" constant="95" id="50s-0J-hko"/>
+                <constraint firstItem="VtG-BD-eRC" firstAttribute="top" secondItem="Rd1-Wi-YeL" secondAttribute="bottom" constant="46" id="8zf-Sj-WLF"/>
+                <constraint firstItem="Rd1-Wi-YeL" firstAttribute="leading" secondItem="b8r-F1-pYs" secondAttribute="leading" constant="21" id="CLu-bY-uiS"/>
+                <constraint firstAttribute="trailing" secondItem="Rd1-Wi-YeL" secondAttribute="trailing" constant="20" id="Idf-Fk-Tnn"/>
+                <constraint firstItem="VtG-BD-eRC" firstAttribute="leading" secondItem="b8r-F1-pYs" secondAttribute="leading" constant="96" id="Zgw-4Y-nQ2"/>
+                <constraint firstItem="Rd1-Wi-YeL" firstAttribute="top" secondItem="b8r-F1-pYs" secondAttribute="top" constant="152" id="isd-yk-D7g"/>
+            </constraints>
+            <point key="canvasLocation" x="1479" y="391"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NGRegistrationForm" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYA-ZA-4SL">
+                                <rect key="frame" x="247" y="20" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1764705882" green="0.37647058820000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PYA-ZA-4SL" secondAttribute="height" multiplier="1:1" id="B83-dj-PSc"/>
+                                    <constraint firstAttribute="height" constant="50" id="FJf-lU-GBS"/>
+                                    <constraint firstAttribute="width" constant="50" id="u97-pR-6aN"/>
+                                </constraints>
+                                <state key="normal" title="Step 4">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Action_4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q1P-e4-Fff"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5S-l1-pad">
+                                <rect key="frame" x="20" y="20" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1764705882" green="0.37647058820000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="JyI-5C-eyz"/>
+                                    <constraint firstAttribute="width" secondItem="H5S-l1-pad" secondAttribute="height" multiplier="1:1" id="OZr-eM-cZb"/>
+                                    <constraint firstAttribute="height" constant="50" id="w7L-Jq-BG8"/>
+                                </constraints>
+                                <state key="normal" title="Step 1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Action_1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XFl-ab-aEY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPv-cM-fYX">
+                                <rect key="frame" x="95" y="20" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1764705882" green="0.37647058820000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nPv-cM-fYX" secondAttribute="height" multiplier="1:1" id="6pU-Nc-Fde"/>
+                                    <constraint firstAttribute="height" constant="50" id="Yre-9O-jFL"/>
+                                    <constraint firstAttribute="width" constant="50" id="iBc-E5-NtF"/>
+                                </constraints>
+                                <state key="normal" title="Step 2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Action_2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XIB-8l-zek"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKp-IV-ZW2">
+                                <rect key="frame" x="171" y="20" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.1764705882" green="0.37647058820000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Hcd-7T-exM"/>
+                                    <constraint firstAttribute="height" constant="50" id="fOu-0R-2hE"/>
+                                    <constraint firstAttribute="width" secondItem="GKp-IV-ZW2" secondAttribute="height" multiplier="1:1" id="m9f-NG-ZAV"/>
+                                </constraints>
+                                <state key="normal" title="Step 3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Action_3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PeM-Mo-B4w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PYA-ZA-4SL" firstAttribute="width" secondItem="H5S-l1-pad" secondAttribute="width" id="4RC-hD-JuT"/>
+                            <constraint firstItem="GKp-IV-ZW2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="5QP-6i-woM"/>
+                            <constraint firstItem="nPv-cM-fYX" firstAttribute="width" secondItem="H5S-l1-pad" secondAttribute="width" id="E3K-y8-Rn8"/>
+                            <constraint firstItem="nPv-cM-fYX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="FIP-tU-PFa"/>
+                            <constraint firstItem="GKp-IV-ZW2" firstAttribute="width" secondItem="H5S-l1-pad" secondAttribute="width" id="KjZ-af-vpJ"/>
+                            <constraint firstItem="H5S-l1-pad" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="OA0-QA-qtA"/>
+                            <constraint firstItem="PYA-ZA-4SL" firstAttribute="height" secondItem="H5S-l1-pad" secondAttribute="height" id="Uhd-zY-RDx"/>
+                            <constraint firstAttribute="trailing" secondItem="PYA-ZA-4SL" secondAttribute="trailing" constant="23" id="Uyb-iB-cuV"/>
+                            <constraint firstItem="nPv-cM-fYX" firstAttribute="leading" secondItem="H5S-l1-pad" secondAttribute="trailing" constant="25" id="bac-bK-05y"/>
+                            <constraint firstItem="PYA-ZA-4SL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="d5E-q2-ZiJ"/>
+                            <constraint firstItem="H5S-l1-pad" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="eUH-9x-6OV"/>
+                            <constraint firstItem="GKp-IV-ZW2" firstAttribute="height" secondItem="H5S-l1-pad" secondAttribute="height" id="nLQ-gA-NW9"/>
+                            <constraint firstItem="nPv-cM-fYX" firstAttribute="height" secondItem="H5S-l1-pad" secondAttribute="height" id="nw4-u0-Jjk"/>
+                            <constraint firstItem="GKp-IV-ZW2" firstAttribute="leading" secondItem="nPv-cM-fYX" secondAttribute="trailing" constant="26" id="o89-Gt-Bh4"/>
+                            <constraint firstItem="PYA-ZA-4SL" firstAttribute="leading" secondItem="GKp-IV-ZW2" secondAttribute="trailing" constant="26" id="w3v-HQ-Hcd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn1" destination="H5S-l1-pad" id="VXE-DF-Zcf"/>
+                        <outlet property="btn2" destination="nPv-cM-fYX" id="R89-cf-qbX"/>
+                        <outlet property="btn3" destination="GKp-IV-ZW2" id="Ek0-EY-R5H"/>
+                        <outlet property="btn4" destination="PYA-ZA-4SL" id="HBe-03-VuR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181" y="406"/>
+        </scene>
+    </scenes>
+</document>
